@@ -7,6 +7,7 @@ const CARD_INFO = {
     desktop: "/assets/image-product-desktop.jpg",
     alt: "perfume bottle",
   },
+  type: "perfume",
 };
 
 function App() {

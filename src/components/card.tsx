@@ -8,6 +8,7 @@ type CardProps = {
       desktop: string;
       alt: string;
     };
+    type: string;
   };
 };
 
@@ -17,10 +18,15 @@ const Card: FC<CardProps> = ({ info }) => {
       <img
         src={info.image.mobile}
         alt={info.image.alt}
-        className="rounded-t-xl"
+        className="h-1/2 rounded-t-xl md:hidden"
+      />
+      <img
+        src={info.image.desktop}
+        alt={info.image.alt}
+        className="hidden h-full w-1/2 rounded-l-xl md:block"
       />
       <div className="flex flex-col md:w-1/2">
-        <p>Type</p>
+        <p>{info.type}</p>
         <p>{info.title}</p>
         <p>DEscription</p>
         <div className="flex gap-1">
