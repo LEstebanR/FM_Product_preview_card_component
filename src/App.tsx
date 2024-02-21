@@ -1,7 +1,18 @@
+import Card from "./components/card";
+
+const CARD_INFO = {
+  title: "Gabriellle Essence Eau de Parfum",
+  image: {
+    mobile: "/assets/image-product-mobile.jpg",
+    desktop: "/assets/image-product-desktop.jpg",
+    alt: "perfume bottle",
+  },
+};
+
 function App() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center">
-      <p>work in progress...</p>
+    <div className="flex h-screen w-screen items-center justify-center bg-cream">
+      <Card info={CARD_INFO} />
     </div>
   );
 }
