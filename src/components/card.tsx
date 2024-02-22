@@ -17,18 +17,17 @@ type CardProps = {
 
 const Card: FC<CardProps> = ({ info }) => {
   return (
-    <div className="flex h-90 w-11/12 max-w-100 flex-col gap-1 rounded-xl bg-white  md:h-100  md:flex-row md:items-center md:justify-between">
-      <img
-        src={info.image.mobile}
-        alt={info.image.alt}
-        className="h-2/6 rounded-t-xl md:hidden"
-      />
-      <img
-        src={info.image.desktop}
-        alt={info.image.alt}
-        className="hidden h-full w-1/2 rounded-l-xl md:block"
-      />
-      <div className="flex h-full flex-col justify-around p-8 md:w-1/2">
+    <div className="my-4 flex h-90 w-11/12 max-w-100 flex-col gap-1 rounded-xl  bg-white  md:h-100 md:flex-row md:items-center md:justify-between">
+      <picture className="size-full">
+        <source srcSet={info.image.mobile} media="(max-width: 768px)" />
+        <source srcSet={info.image.desktop} media="(min-width: 769px)" />
+        <img
+          src={info.image.desktop}
+          alt={info.image.alt}
+          className="h-full rounded-t-xl md:w-full md:rounded-l-xl md:rounded-r-none"
+        />
+      </picture>
+      <div className="flex h-full flex-col justify-around gap-2 p-8 md:w-1/2">
         <p className="font-montserrat uppercase leading-loose tracking-widest text-gray">
           {info.type}
         </p>
@@ -40,7 +39,7 @@ const Card: FC<CardProps> = ({ info }) => {
           </p>
           <p className="text-sm text-gray line-through">${info.realPrice}</p>
         </div>
-        <button className="flex h-12 items-center justify-center gap-2 rounded-xl bg-primary p-2 font-montserrat text-sm font-bold text-white">
+        <button className="flex h-12 items-center justify-center gap-2 rounded-xl bg-primary p-2 font-montserrat text-sm font-bold text-white hover:bg-hover">
           <img src="/assets/icon-cart.svg" alt="cart icon" />
           Add to cart
         </button>

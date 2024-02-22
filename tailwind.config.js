@@ -7,6 +7,7 @@ export default {
         cream: "hsl(30, 38%, 92%)",
         gray: "hsl(228, 12%, 48%)",
         primary: "hsl(158, 36%, 37%)",
+        hover: "#1A4032",
       },
       maxHeight: {
         100: "30rem",
