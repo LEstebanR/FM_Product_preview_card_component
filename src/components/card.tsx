@@ -32,7 +32,7 @@ const Card: FC<CardProps> = ({ info }) => {
         <p className="font-montserrat uppercase leading-loose tracking-widest text-gray">
           {info.type}
         </p>
-        <p className="font-frauces text-3xl font-extrabold">{info.title}</p>
+        <h1 className="font-frauces text-3xl font-extrabold">{info.title}</h1>
         <p className="font-montserrat text-sm text-gray">{info.description}</p>
         <div className="flex items-center gap-4">
           <p className="font-frauces text-4xl font-extrabold text-primary">
