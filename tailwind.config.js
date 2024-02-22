@@ -16,7 +16,7 @@ export default {
       },
       height: {
         90: "75%",
-        100: "30rem",
+        100: "29rem",
       },
       fontFamily: {
         montserrat: ["Montserrat"],
