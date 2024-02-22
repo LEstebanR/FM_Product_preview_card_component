@@ -16,7 +16,10 @@ const CARD_INFO = {
 
 function App() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-cream">
+    <div
+      className="flex h-screen w-screen items-center justify-center bg-cream"
+      role="main"
+    >
       <Card info={CARD_INFO} />
     </div>
   );

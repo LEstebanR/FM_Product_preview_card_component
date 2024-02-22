@@ -41,7 +41,7 @@ const Card: FC<CardProps> = ({ info }) => {
           <p className="text-sm text-gray line-through">${info.realPrice}</p>
         </div>
         <button className="flex h-12 items-center justify-center gap-2 rounded-xl bg-primary p-2 font-montserrat text-sm font-bold text-white">
-          <img src="/assets/icon-cart.svg" />
+          <img src="/assets/icon-cart.svg" alt="cart icon" />
           Add to cart
         </button>
       </div>
