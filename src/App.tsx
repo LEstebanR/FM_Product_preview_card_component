@@ -8,6 +8,10 @@ const CARD_INFO = {
     alt: "perfume bottle",
   },
   type: "perfume",
+  description:
+    "A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the house of CHANEL.",
+  priceOff: 169.99,
+  realPrice: 149.99,
 };
 
 function App() {

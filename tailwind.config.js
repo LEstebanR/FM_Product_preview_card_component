@@ -4,13 +4,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: "#F2EAE2",
+        cream: "hsl(30, 38%, 92%)",
+        gray: "hsl(228, 12%, 48%)",
+        primary: "hsl(158, 36%, 37%)",
       },
       maxHeight: {
         100: "30rem",
       },
       maxWidth: {
         100: "38rem",
+      },
+      height: {
+        90: "75%",
+        100: "30rem",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat"],
+        frauces: ["Fraunces"],
       },
     },
   },
